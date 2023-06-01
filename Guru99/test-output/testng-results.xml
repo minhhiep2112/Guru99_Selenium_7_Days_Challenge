@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-01T19:09:54 ICT" name="Default suite" finished-at="2023-06-01T19:10:07 ICT" duration-ms="12583">
+    <groups>
+    </groups>
+    <test started-at="2023-06-01T19:09:54 ICT" name="Default test" finished-at="2023-06-01T19:10:07 ICT" duration-ms="12583">
+      <class name="testcase.TC001_LogIn">
+        <test-method is-config="true" signature="StartBrowser()[pri:0, instance:testcase.TC001_LogIn@7b36aa0c]" started-at="2023-06-01T19:09:54 ICT" name="StartBrowser" finished-at="2023-06-01T19:10:02 ICT" duration-ms="7534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartBrowser -->
+        <test-method signature="SuccessfullLogin()[pri:0, instance:testcase.TC001_LogIn@7b36aa0c]" started-at="2023-06-01T19:10:02 ICT" name="SuccessfullLogin" finished-at="2023-06-01T19:10:03 ICT" duration-ms="1440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SuccessfullLogin -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:testcase.TC001_LogIn@7b36aa0c]" started-at="2023-06-01T19:10:03 ICT" name="CloseBrowser" finished-at="2023-06-01T19:10:07 ICT" duration-ms="3580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- testcase.TC001_LogIn -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
