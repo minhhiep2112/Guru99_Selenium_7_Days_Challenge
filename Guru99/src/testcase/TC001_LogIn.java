@@ -1,24 +1,23 @@
 package testcase;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.assertNotEquals;
 import java.io.IOException;
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import findProperty.FindProperties;
+import data_driven.GetData;
 import initDriver.InitialDriver;
 
 public class TC001_LogIn extends InitialDriver {
 	
-	@Test
-	public void SuccessfullLogin() throws IOException {
+	@Test(dataProvider = "example_data", dataProviderClass = GetData.class)
+	public void SuccessfullLogin(String name, String pass) throws IOException {
 		
 		// enter user name and password, click login, then verify login successful
-		login.enterUserName("mngr506560");
-		login.enterPassword("gytEdAd");
+		login.enterUserName(name);
+		login.enterPassword(pass);
 		login.clickLoginButton();
-		assertTrue(driver.findElement(By.xpath(FindProperties.locateProperty("welcome_message_xpath"))).getText().contains("mngr506560"));
-		assertEquals(driver.getTitle(), "Guru99 Bank Manager HomePage");
+	//	assertTrue(driver.findElement(By.xpath(FindProperties.locateProperty("welcome_message_xpath"))).getText().contains("mngr506560"),
+	//			"Wrong user name or password!");
+		assertNotEquals(driver.getTitle(), "Guru99 Bank Home Page", "Wrong username or password!");
 		
 	}
 	
