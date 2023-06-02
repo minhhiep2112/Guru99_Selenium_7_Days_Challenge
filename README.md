@@ -1,6 +1,6 @@
-# Guru99_Selenium_practise
+# Guru99_Selenium_practice
 
-This is "Guru99 Bank" project, main purpose is for practise.
+This is "Guru99 Bank" project, main purpose is for practice.
 The project is written in Java (can be written in other language).
 
 Link to registry: https://www.guru99.com/live-selenium-project.html
