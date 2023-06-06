@@ -1,4 +1,4 @@
-# Guru99_Selenium_practice
+# Guru99_Selenium_7_Days_challenge
 
 This is "Guru99 Bank" project, main purpose is for practice.
 The project is written in Java (can be written in other language).
