@@ -7,9 +7,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import findProperty.FindProperties;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.LoginPageActions;
+import ultis.FindProperties;
 
 public class InitialDriver {
 	
@@ -46,7 +47,7 @@ public class InitialDriver {
 	
 	@AfterMethod
 	public void CloseBrowser() throws InterruptedException {
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		driver.quit();
 	}
 }
